@@ -1,0 +1,96 @@
+html, body {
+    color:                  #333;
+    font-family:            "RobotoDraft", "Roboto", sans-serif;
+    font-size:              1em;
+    line-height:            1em;
+    margin:                 0;
+    padding:                0;
+    -webkit-font-smoothing: antialiased
+}
+
+.centeredContainer {
+    margin:    0 auto;
+    max-width: 1200px;
+    padding:   1em;
+}
+
+header {
+    background-color: #ff9800;
+    box-shadow:       0 2px 5px rgba(0, 0, 0, 0.26);
+    color:            #fff;
+    font-size:        1.25em;
+    margin-bottom:    5px;
+}
+
+a {
+    color:           #ff9800;
+    text-decoration: none;
+}
+
+.md-input {
+    background:          0 0;
+    border:              0 solid rgba(0, 0, 0, 0.12);
+    border-bottom-width: 1px;
+    border-radius:       0;
+    box-sizing:          border-box;
+    color:               rgba(0, 0, 0, 0.87);
+    display:             block;
+    line-height:         26px;
+    margin-bottom:       1em;
+    margin-top:          0; padding: 2px 2px 1px;
+    width:               100%;
+}
+
+.md-input:focus {
+    outline: 0;
+}
+
+.md-button {
+    background-color:    #ff9800;
+    border:              0;
+    border-radius:       3px;
+    box-shadow:          0 2px 5px 0 rgba(0, 0, 0, .26);
+    box-sizing:          border-box;
+    color:               rgba(255, 255, 255, 0.87);
+    cursor:              pointer;
+    display:             inline-block;
+    -ms-flex-align:      center;
+    font-family:         inherit;
+    font-size:           14px;
+    font-style:          inherit;
+    font-variant:        inherit;
+    font-weight:         500;
+    letter-spacing:      .01em;
+    line-height:         36px;
+    min-height:          36px;
+    min-width:           88px;
+    outline:             0;
+    overflow:            hidden;
+    padding:             0 6px;
+    position:            relative;
+    text-align:          center;
+    text-decoration:     none;
+    text-transform:      uppercase;
+    white-space:         nowrap;
+    -webkit-user-select: none;
+    -moz-user-select:    none;
+    -ms-user-select:     none;
+    user-select:         none;
+    -webkit-align-items: center;
+    margin:              6px 8px 1em;
+    align-items:         center;
+}
+
+#colorContainer {
+}
+
+#colorContainer div {
+    font-size:      14px;
+    font-weight:    500;
+    padding:        15px;
+    text-transform: uppercase;
+}
+
+#colorContainer div.divider {
+    border-top: 4px solid #fafafa;
+}

@@ -1,8 +1,15 @@
-var baseColorHex = '#008ab7';
 $(function () {
     var $colorContainer = $('#colorContainer');
+    var $colorForm = $('#colorForm');
+    var $colorInput = $('input[name="color"]');
 
-    generateColors(tinycolor(baseColorHex).toHsl());
+    $colorForm.submit(function (e) {
+        e.preventDefault();
+
+        generateColors(tinycolor($colorInput.val()).toHsl());
+    });
+
+    //generateColors(tinycolor(baseColorHex).toHsl());
     function generateColors(baseColor) {
         var colorsToGenerate = [
             // Name, H offset, S offset, L offset
@@ -24,9 +31,8 @@ $(function () {
 
         baseColor.s = baseColor.s * 100;
         baseColor.l = baseColor.l * 100;
-        delete baseColor.a;
 
-        var $body = $('body');
+        $colorContainer.empty();
 
         for (var i = 0; i < colorsToGenerate.length; i++) {
             var name = colorsToGenerate[i][0];

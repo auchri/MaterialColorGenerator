@@ -5,7 +5,8 @@
     <title>Material Color Generator</title>
 
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
 
     <style>
     </style>
@@ -22,11 +23,16 @@
         </div>
     </header>
     <div id="pageContainer" class="centeredContainer">
+        <form id="colorForm">
+            <input type="text" class="md-input" name="color" placeholder="Enter base color (500)" autocomplete="off">
+            <input type="submit" class="md-button" name="generate" value="Generate palette">
+        </form>
+
         <div id="colorContainer"></div>
     </div>
     <footer>
         <div class="centeredContainer">
-            sfsdf GPL v2
+            <a href="LICENSE">Licensed under GPL v2</a> - <a target="_blank" href="https://github.com/auchri/MaterialColorGenerator">GitHub</a>
         </div>
     </footer>
 </body>
